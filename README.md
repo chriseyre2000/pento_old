@@ -1,5 +1,7 @@
 # Pento
 
+The demo from Programming Phoenix LiveView
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
