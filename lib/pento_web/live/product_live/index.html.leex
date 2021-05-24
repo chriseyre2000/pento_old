@@ -1,5 +1,4 @@
 <h1>Listing Products</h1>
-
 <%= if @live_action in [:new, :edit] do %>
   <%= live_modal @socket, PentoWeb.ProductLive.FormComponent,
     id: @product.id || :new,
