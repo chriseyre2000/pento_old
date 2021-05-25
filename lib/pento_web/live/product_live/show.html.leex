@@ -9,6 +9,12 @@
     return_to: Routes.product_show_path(@socket, :show, @product) %>
 <% end %>
 
+ <article class="column">
+    <img alt="product image" width="200" height="200" src="<%= Routes.static_path(
+      @socket, 
+      @product.image_upload || "/images/default_thubnail.jpg")%>">
+  </article>
+
 <ul>
 
   <li>
@@ -31,6 +37,7 @@
     <%= @product.sku %>
   </li>
 
+ 
 </ul>
 
 <span><%= live_patch "Edit", to: Routes.product_show_path(@socket, :edit, @product), class: "button" %></span>

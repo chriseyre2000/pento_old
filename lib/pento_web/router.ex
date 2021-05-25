@@ -21,6 +21,7 @@ defmodule PentoWeb.Router do
     pipe_through [:browser, :require_authenticated_user]
 
     live "/", PageLive, :index
+    live "/promo", PromoLive
     live "/guess", WrongLive
     live "/products", ProductLive.Index, :index
     live "/products/new", ProductLive.Index, :new
